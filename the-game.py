@@ -114,10 +114,10 @@ while True:
 
 
   #PADDLE AND BALL COLLISIONS
-  if (ball.xcor > 440 and ball.xcor() < 450) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
+  if (ball.xcor() > 440 and ball.xcor() < 450) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
     ball.setx(340)
     ball.dx *= -1
 
-  if (ball.xcor > -440 and ball.xcor() < -450) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
+  if (ball.xcor() > -440 and ball.xcor() < -450) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
     ball.setx(-340)
     ball.dx *= -1
